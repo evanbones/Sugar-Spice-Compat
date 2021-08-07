@@ -24,7 +24,7 @@ minecraft {
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
             property 'forge.logging.console.level', 'debug'
             mods {
-                sugar_and_spice {
+                muchmoremodcompat {
                     source sourceSets.main
                 }
             }
@@ -35,7 +35,7 @@ minecraft {
             property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
             property "forge.logging.console.level", "debug"
             mods {
-                sugar_and_spice {
+                muchmoremodcompat {
                     source sourceSets.main
                 }
             }
@@ -45,9 +45,9 @@ minecraft {
             workingDirectory project.file("run")
             property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
             property "forge.logging.console.level", "debug"
-            args '--mod', 'sugar_and_spice', '--all', '--output', file('src/generated/resources/'), '--existing', file("src/main/resources")
+            args '--mod', 'muchmoremodcompat', '--all', '--output', file('src/generated/resources/'), '--existing', file("src/main/resources")
             mods {
-                sugar_and_spice {
+                muchmoremodcompat {
                     source sourceSets.main
                 }
             }
@@ -60,12 +60,12 @@ dependencies {
 	
 	implementation fg.deobf("curse.maven:decorative_blocks_abnormals-421760:3311520")
 	implementation fg.deobf("curse.maven:decorative_blocks-362528:3166283")
-	implementation fg.deobf("curse.maven:atmospheric-362393:3249309")
-    implementation fg.deobf("curse.maven:autumnity-365045:3295700")
-    implementation fg.deobf("curse.maven:enhanced_mushrooms-383725:3353212")
-	implementation fg.deobf("curse.maven:environmental-388992:3221635")
-	implementation fg.deobf("curse.maven:abnormals_core-382216:3351059")
-	implementation fg.deobf("curse.maven:infernalexp-395078:3414229")
+	compileOnly fg.deobf("curse.maven:abnormals_core-382216:3351059")
+	compileOnly fg.deobf("curse.maven:atmospheric-362393:3249309")
+    compileOnly fg.deobf("curse.maven:autumnity-365045:3295700")
+    compileOnly fg.deobf("curse.maven:enhanced_mushrooms-383725:3353212")
+	compileOnly fg.deobf("curse.maven:infernalexp-395078:3414229")
+	compileOnly fg.deobf("curse.maven:environmental-388992:3221635")
 	runtimeOnly fg.deobf("curse.maven:jei-238222:3411420")
 }
 

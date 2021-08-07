@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/support",
+  "textures": {
+    "particle": "muchmoremodcompat:block/birch_support",
+    "texture": "muchmoremodcompat:block/birch_support"
+  }
+}

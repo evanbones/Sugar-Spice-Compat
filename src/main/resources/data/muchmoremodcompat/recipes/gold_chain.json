@@ -1,0 +1,21 @@
+{
+	"group": "muchmoremodcompat",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "gg",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_nugget"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "muchmoremodcompat:gold_chain",
+        "count": 4
+    }
+}

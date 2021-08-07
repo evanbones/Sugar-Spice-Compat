@@ -1,0 +1,9 @@
+{
+  "parent": "muchmoremodcompat:custom/brazier_extinguished",
+  "textures": {
+    "all": "muchmoremodcompat:block/brazier_base",
+    "particle": "muchmoremodcompat:block/brazier_base",
+    "side": "muchmoremodcompat:block/brazier",
+    "base": "muchmoremodcompat:block/brazier_base"
+  }
+}

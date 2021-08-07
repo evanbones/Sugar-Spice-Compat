@@ -14,11 +14,11 @@ license="MIT"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="sugar_and_spice" #mandatory
+modId="muchmoremodcompat" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="Sugar And Spice Mod" #mandatory
+displayName="Much More Mod Compat" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -26,7 +26,7 @@ displayName="Sugar And Spice Mod" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks for playing my pack!" #optional
+credits="Thanks for using my mod!" #optional
 # A text field displayed in the mod UI
 authors="chickenmcjesus" #optional
 # The description text for the mod (multi line!) (#mandatory)
@@ -34,7 +34,7 @@ description='''
  A small mod adding compatability between various mods.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.sugar_and_spice]] #optional
+[[dependencies.muchmoremodcompat]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -46,7 +46,7 @@ description='''
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.sugar_and_spice]]
+[[dependencies.muchmoremodcompat]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.2,)"

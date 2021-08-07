@@ -1,8 +1,0 @@
-{
-  "parent": "sugar_and_spice:custom/beam_x",
-  "textures": {
-    "particle": "sugar_and_spice:block/birch_beam_side",
-    "side": "sugar_and_spice:block/birch_beam_side",
-    "end": "sugar_and_spice:block/birch_beam_end"
-  }
-}

@@ -1,0 +1,9 @@
+{
+  "parent": "muchmoremodcompat:custom/chandelier",
+  "textures": {
+    "particle": "muchmoremodcompat:block/chandelier_base",
+    "torch2": "muchmoremodcompat:block/glow_torch_2",
+    "torch": "muchmoremodcompat:block/glow_torch_1",
+    "base": "muchmoremodcompat:block/chandelier_base"
+  }
+}

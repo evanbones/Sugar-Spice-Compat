@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/chain",
+  "textures": {
+    "particle": "muchmoremodcompat:block/ice_chain",
+    "texture": "muchmoremodcompat:block/ice_chain"
+  }
+}
