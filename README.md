@@ -1,2 +1,2 @@
-# Sugar and Spice
- A small mod adding compatability for various mods. Only for use in my modpack, Sugar and Spice unless permission is otherwise granted.
+# Much More Mod Compat
+ A small mod adding compatability for various mods. Initally made for use in my modpack, Sugar and Spice
