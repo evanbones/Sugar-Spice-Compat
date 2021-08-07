@@ -1,0 +1,9 @@
+{
+  "parent": "sugar_and_spice:custom/chandelier",
+  "textures": {
+    "particle": "sugar_and_spice:block/chandelier_base",
+    "torch2": "sugar_and_spice:block/glow_torch_2",
+    "torch": "sugar_and_spice:block/glow_torch_1",
+    "base": "sugar_and_spice:block/chandelier_base"
+  }
+}

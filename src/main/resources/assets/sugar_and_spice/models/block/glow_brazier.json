@@ -1,0 +1,10 @@
+{
+  "parent": "sugar_and_spice:custom/brazier",
+  "textures": {
+    "all": "sugar_and_spice:block/brazier_base",
+    "particle": "sugar_and_spice:block/brazier_base",
+    "side": "sugar_and_spice:block/brazier",
+    "fire": "sugar_and_spice:block/glow_fire",
+    "base": "sugar_and_spice:block/brazier_base"
+  }
+}

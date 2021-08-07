@@ -1,0 +1,7 @@
+{
+  "parent": "sugar_and_spice:custom/chain",
+  "textures": {
+    "particle": "sugar_and_spice:block/gold_chain",
+    "texture": "sugar_and_spice:block/gold_chain"
+  }
+}

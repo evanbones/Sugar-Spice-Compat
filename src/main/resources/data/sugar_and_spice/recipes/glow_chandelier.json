@@ -1,0 +1,17 @@
+{
+	"group": "sugar_and_spice",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "infernalexp:glow_torch"
+        }
+    },
+    "result": {
+        "item": "sugar_and_spice:glow_chandelier",
+        "count": 1
+    }
+}

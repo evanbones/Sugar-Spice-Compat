@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true" : {
+     "model" : "sugar_and_spice:block/glow_brazier"
+    },
+    "lit=false" : {
+      "model" : "sugar_and_spice:block/brazier_extinguished"
+    }
+  }
+}

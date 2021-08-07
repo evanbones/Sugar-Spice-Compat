@@ -1,0 +1,7 @@
+{
+  "parent": "sugar_and_spice:custom/support",
+  "textures": {
+    "particle": "sugar_and_spice:block/birch_support",
+    "texture": "sugar_and_spice:block/birch_support"
+  }
+}

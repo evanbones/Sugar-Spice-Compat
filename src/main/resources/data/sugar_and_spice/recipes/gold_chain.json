@@ -1,0 +1,21 @@
+{
+	"group": "sugar_and_spice",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "gg",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:gold_nugget"
+        },
+        "g": {
+            "item": "minecraft:gold_ingot"
+        }
+    },
+    "result": {
+        "item": "sugar_and_spice:gold_chain",
+        "count": 4
+    }
+}

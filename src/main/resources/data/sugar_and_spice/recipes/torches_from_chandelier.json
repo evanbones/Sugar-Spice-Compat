@@ -1,0 +1,16 @@
+{
+	"group": "sugar_and_spice",
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "sugar_and_spice:chandelier"
+        }
+    },
+    "result": {
+        "item": "minecraft:torch",
+        "count": 4
+    }
+}

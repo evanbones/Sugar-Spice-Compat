@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sugar_and_spice:block/ice_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sugar_and_spice:block/ice_chain"
+    },
+    "axis=z": {
+      "model": "sugar_and_spice:block/ice_chain",
+      "x": 90
+    }
+  }
+}
