@@ -73,12 +73,9 @@ public enum EnvironmentalWoodTypes
         return this.name;
     }
 
-
-
     public boolean isAvailable() {
         return ModList.get().isLoaded("environmental");
     }
-
 
     public boolean isFlammable() {
         return true;

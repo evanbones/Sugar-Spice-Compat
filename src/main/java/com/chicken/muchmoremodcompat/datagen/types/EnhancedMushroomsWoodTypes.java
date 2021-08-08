@@ -68,9 +68,6 @@ public enum EnhancedMushroomsWoodTypes
         return this.name;
     }
 
-
-
-
     public boolean isAvailable() {
         return ModList.get().isLoaded("enhanced_mushrooms");
     }

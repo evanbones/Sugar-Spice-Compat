@@ -7,6 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.ModList;
 
 public class GlowChandelierBlock
     extends ChandelierBlock {
@@ -25,9 +26,11 @@ public class GlowChandelierBlock
         worldIn.addParticle(ParticleTypes.SMOKE, d0-off2-off3, d1, d2+off1-off3, 0.0D, 0.0D, 0.0D);
         worldIn.addParticle(ParticleTypes.SMOKE, d0+off1-off3, d1, d2+off2+off3, 0.0D, 0.0D, 0.0D);
         worldIn.addParticle(ParticleTypes.SMOKE, d0+off2, d1, d2-off1, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0-off1, d1, d2-off2, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0-off2-off3, d1, d2+off1-off3, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0+off1-off3, d1, d2+off2+off3, 0.0D, 0.0D, 0.0D);
-        worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0+off2, d1, d2-off1, 0.0D, 0.0D, 0.0D);
-      }
+        if (ModList.get().isLoaded("infernalexp")) {
+            worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0 - off1, d1, d2 - off2, 0.0D, 0.0D, 0.0D);
+            worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0 - off2 - off3, d1, d2 + off1 - off3, 0.0D, 0.0D, 0.0D);
+            worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0 + off1 - off3, d1, d2 + off2 + off3, 0.0D, 0.0D, 0.0D);
+            worldIn.addParticle(InfernalProxy.getGlowFlameParticle(), d0 + off2, d1, d2 - off1, 0.0D, 0.0D, 0.0D);
+        }
+    }
 }
