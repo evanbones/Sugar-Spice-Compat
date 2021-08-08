@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:grimwood_planks"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:grimwood_support",
+    "count": 3
+  }
+}

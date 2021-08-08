@@ -2,7 +2,6 @@ package com.chicken.muchmoremodcompat.blocks;
 
 import com.lilypuree.decorative_blocks.blocks.SupportBlock;
 import com.teamaurora.enhanced_mushrooms.common.block.IGlowshroomWood;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -16,7 +15,7 @@ import static com.chicken.muchmoremodcompat.datagen.types.EnhancedMushroomsWoodT
 
 public class AlphaSupportBlock
     extends SupportBlock {
-    public AlphaSupportBlock(Block.Properties properties) {
+    public AlphaSupportBlock(Properties properties) {
         super(properties, GLOWSHROOM);
     }
 

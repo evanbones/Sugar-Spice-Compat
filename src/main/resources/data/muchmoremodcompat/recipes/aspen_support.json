@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:aspen_planks"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:aspen_support",
+    "count": 3
+  }
+}

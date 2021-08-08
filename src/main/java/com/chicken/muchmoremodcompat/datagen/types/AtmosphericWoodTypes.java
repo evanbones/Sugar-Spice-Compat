@@ -10,12 +10,12 @@ public enum AtmosphericWoodTypes
     KOUSA("kousa")
             {
                 public Block getLog() {
-                    return (Block)AtmosphericBlocks.KOUSA_WOOD.get();
+                    return (Block)AtmosphericBlocks.KOUSA_LOG.get();
                 }
 
 
                 public Block getStrippedLog() {
-                    return (Block)AtmosphericBlocks.STRIPPED_KOUSA_WOOD.get();
+                    return (Block)AtmosphericBlocks.STRIPPED_KOUSA_LOG.get();
                 }
 
 
@@ -31,6 +31,57 @@ public enum AtmosphericWoodTypes
 
                 public Block getPlanks() {
                     return (Block)AtmosphericBlocks.KOUSA_PLANKS.get();
+                }
+            },
+    ASPEN("aspen") {
+        public Block getLog() {
+            return (Block) AtmosphericBlocks.ASPEN_LOG.get();
+        }
+
+
+        public Block getStrippedLog() {
+            return (Block) AtmosphericBlocks.STRIPPED_ASPEN_LOG.get();
+        }
+
+
+        public Block getSlab() {
+            return (Block) AtmosphericBlocks.ASPEN_SLAB.get();
+        }
+
+
+        public Block getFence() {
+            return (Block) AtmosphericBlocks.ASPEN_FENCE.get();
+        }
+
+
+        public Block getPlanks() {
+            return (Block) AtmosphericBlocks.ASPEN_PLANKS.get();
+        }
+    },
+    GRIMWOOD("grimwood")
+            {
+                public Block getLog() {
+                    return (Block)AtmosphericBlocks.GRIMWOOD_LOG.get();
+                }
+
+
+                public Block getStrippedLog() {
+                    return (Block)AtmosphericBlocks.STRIPPED_GRIMWOOD_LOG.get();
+                }
+
+
+                public Block getSlab() {
+                    return (Block)AtmosphericBlocks.GRIMWOOD_SLAB.get();
+                }
+
+
+                public Block getFence() {
+                    return (Block)AtmosphericBlocks.GRIMWOOD_FENCE.get();
+                }
+
+
+                public Block getPlanks() {
+                    return (Block)AtmosphericBlocks.GRIMWOOD_PLANKS.get();
                 }
             };
 

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx "
+  ],
+  "key": {
+    "x": {
+      "item": "environmental:wisteria_log"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:wisteria_palisade",
+    "count": 6
+  }
+}

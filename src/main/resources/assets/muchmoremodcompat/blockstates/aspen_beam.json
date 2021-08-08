@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "muchmoremodcompat:block/aspen_beam_x"
+    },
+    "axis=y": {
+      "model": "muchmoremodcompat:block/aspen_beam_y"
+    },
+    "axis=z": {
+      "model": "muchmoremodcompat:block/aspen_beam_z"
+    }
+  }
+}

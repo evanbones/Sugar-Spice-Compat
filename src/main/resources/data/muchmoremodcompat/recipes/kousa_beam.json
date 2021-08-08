@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:stripped_kousa_log"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:kousa_beam",
+    "count": 2
+  }
+}

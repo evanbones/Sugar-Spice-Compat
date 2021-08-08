@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/support",
+  "textures": {
+    "particle": "muchmoremodcompat:block/kousa_support",
+    "texture": "muchmoremodcompat:block/kousa_support"
+  }
+}

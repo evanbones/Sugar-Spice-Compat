@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/support",
+  "textures": {
+    "particle": "muchmoremodcompat:block/aspen_support",
+    "texture": "muchmoremodcompat:block/aspen_support"
+  }
+}

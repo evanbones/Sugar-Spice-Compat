@@ -15,7 +15,6 @@ public class CompatWoodTypes
 
     static {
         addModWoodTypes("atmospheric", (IWoodType[])AtmosphericWoodTypes.values());
-
         addModWoodTypes("environmental", (IWoodType[])EnvironmentalWoodTypes.values());
     }
 

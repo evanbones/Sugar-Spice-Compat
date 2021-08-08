@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:stripped_grimwood_log"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:grimwood_beam",
+    "count": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "muchmoremodcompat:custom/beam_y",
+  "textures": {
+    "particle": "muchmoremodcompat:block/wisteria_beam_side",
+    "side": "muchmoremodcompat:block/wisteria_beam_side",
+    "end": "muchmoremodcompat:block/wisteria_beam_end"
+  }
+}

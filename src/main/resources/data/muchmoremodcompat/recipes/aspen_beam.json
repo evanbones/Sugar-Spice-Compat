@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:stripped_aspen_log"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:aspen_beam",
+    "count": 2
+  }
+}

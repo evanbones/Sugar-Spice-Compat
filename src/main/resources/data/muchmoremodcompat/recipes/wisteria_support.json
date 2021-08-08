@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "item": "environmental:wisteria_planks"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:wisteria_support",
+    "count": 3
+  }
+}

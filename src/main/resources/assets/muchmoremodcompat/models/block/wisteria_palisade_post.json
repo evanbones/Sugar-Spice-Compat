@@ -1,0 +1,8 @@
+{
+  "parent": "muchmoremodcompat:custom/palisade_post",
+  "textures": {
+    "particle": "muchmoremodcompat:block/wisteria_palisade_side",
+    "side": "muchmoremodcompat:block/wisteria_palisade_side",
+    "end": "muchmoremodcompat:block/wisteria_palisade_end"
+  }
+}

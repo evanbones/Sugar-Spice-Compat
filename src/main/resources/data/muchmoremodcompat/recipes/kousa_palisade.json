@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:kousa_log"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:kousa_palisade",
+    "count": 6
+  }
+}

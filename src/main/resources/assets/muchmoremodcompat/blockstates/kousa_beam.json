@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "muchmoremodcompat:block/kousa_beam_x"
+    },
+    "axis=y": {
+      "model": "muchmoremodcompat:block/kousa_beam_y"
+    },
+    "axis=z": {
+      "model": "muchmoremodcompat:block/kousa_beam_z"
+    }
+  }
+}

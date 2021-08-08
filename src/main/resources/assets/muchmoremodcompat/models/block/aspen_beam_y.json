@@ -1,0 +1,8 @@
+{
+  "parent": "muchmoremodcompat:custom/beam_y",
+  "textures": {
+    "particle": "muchmoremodcompat:block/aspen_beam_side",
+    "side": "muchmoremodcompat:block/aspen_beam_side",
+    "end": "muchmoremodcompat:block/aspen_beam_end"
+  }
+}

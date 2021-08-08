@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "grimwood_palisade",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "muchmoremodcompat:grimwood_palisade"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "particle": "muchmoremodcompat:block/grimwood_beam_side",
+    "side": "muchmoremodcompat:block/grimwood_beam_side",
+    "end": "muchmoremodcompat:block/grimwood_beam_end"
+  }
+}
