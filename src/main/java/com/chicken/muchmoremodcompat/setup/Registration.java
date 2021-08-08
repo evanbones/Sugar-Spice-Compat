@@ -1,12 +1,11 @@
 package com.chicken.muchmoremodcompat.setup;
 
+import com.chicken.muchmoremodcompat.blocks.*;
 import com.google.common.collect.ImmutableMap;
 import com.lilypuree.decorative_blocks.blocks.*;
 import com.lilypuree.decorative_blocks.datagen.types.IWoodType;
 import com.lilypuree.decorative_blocks.datagen.types.WoodDecorativeBlockTypes;
 import com.lilypuree.decorative_blocks.items.BurnableBlockItem;
-import com.chicken.muchmoremodcompat.blocks.GlowChandelierBlock;
-import com.chicken.muchmoremodcompat.blocks.GlowBrazierBlock;
 import com.chicken.muchmoremodcompat.datagen.types.CompatWoodTypes;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -15,8 +14,10 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
+import net.minecraftforge.fml.ModList;
 import net.minecraft.item.Item;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -37,14 +38,21 @@ public class Registration {
 
     public static final AbstractBlock.Properties goldChainProperties = Block.Properties.create(Material.IRON, MaterialColor.GOLD).hardnessAndResistance(4.3F).sound(SoundType.METAL).notSolid();
     public static final RegistryObject<ChainBlock> GOLD_CHAIN = BLOCKS.register("gold_chain", () -> new ChainBlock(goldChainProperties));
-    public static final AbstractBlock.Properties iceChainProperties = Block.Properties.create(Material.ICE, MaterialColor.BLUE).hardnessAndResistance(0.99F).sound(SoundType.GLASS).notSolid();
+    public static final AbstractBlock.Properties iceChainProperties = Block.Properties.create(Material.ICE, MaterialColor.BLUE).hardnessAndResistance(0.99F).harvestTool(ToolType.PICKAXE).sound(SoundType.GLASS).notSolid();
     public static final RegistryObject<ChainBlock> ICE_CHAIN = BLOCKS.register("ice_chain", () -> new ChainBlock(iceChainProperties));
     public static final RegistryObject<ChandelierBlock> GLOW_CHANDELIER = BLOCKS.register("glow_chandelier", () -> new GlowChandelierBlock(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(0.3F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 11)));
     public static final RegistryObject<BrazierBlock> GLOW_BRAZIER = BLOCKS.register("glow_brazier", () -> new GlowBrazierBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0F).sound(SoundType.METAL).setLightLevel(state -> state.get(BlockStateProperties.LIT) ? 10 : 0).notSolid()));
 
+    public static final RegistryObject<PalisadeBlock> GLOWSHROOM_PALISADE = BLOCKS.register("glowshroom_palisade", () -> new AlphaPalisadeBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 4.0F).notSolid().sound(SoundType.WOOD).setLightLevel(state -> 14)));
+    public static final RegistryObject<BeamBlock> GLOWSHROOM_BEAM = BLOCKS.register("glowshroom_beam", () -> new AlphaBeamBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 14)));
+    public static final RegistryObject<SupportBlock> GLOWSHROOM_SUPPORT = BLOCKS.register("glowshroom_support", () -> new AlphaSupportBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 14)));
+
     public static final Item.Properties modItemProperties = new Item.Properties().group(ModSetup.ITEM_GROUP);
     public static final Item.Properties dummyProperty = new Item.Properties();
 
+    public static final RegistryObject<Item> GLOWSHROOM_SUPPORT_ITEM = ITEMS.register("glowshroom_support", () -> new BlockItem(GLOWSHROOM_SUPPORT.get(), modItemProperties));
+    public static final RegistryObject<Item> GLOWSHROOM_BEAM_ITEM = ITEMS.register("glowshroom_beam", () -> new BlockItem(GLOWSHROOM_BEAM.get(), modItemProperties));
+    public static final RegistryObject<Item> GLOWSHROOM_PALISADE_ITEM = ITEMS.register("glowshroom_palisade", () -> new BlockItem(GLOWSHROOM_PALISADE.get(), modItemProperties));
     public static final RegistryObject<Item> GLOW_CHANDELIER_ITEM = ITEMS.register("glow_chandelier", () -> new BurnableBlockItem(GLOW_CHANDELIER.get(), modItemProperties, 1600));
     public static final RegistryObject<Item> GLOW_BRAZIER_ITEM = ITEMS.register("glow_brazier", () -> new BlockItem(GLOW_BRAZIER.get(), modItemProperties));
     public static final RegistryObject<Item> GOLD_CHAIN_ITEM = ITEMS.register("gold_chain", () -> new BlockItem(GOLD_CHAIN.get(), modItemProperties));

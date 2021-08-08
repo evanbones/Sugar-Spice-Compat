@@ -11,5 +11,9 @@
   "block.muchmoremodcompat.kousa_beam": "Kousa Beam",
   "block.muchmoremodcompat.kousa_support": "Kousa Support",
   "block.muchmoremodcompat.kousa_palisade": "Kousa Palisade",
-  "block.muchmoremodcompat.kousa_seat": "Kousa Seat"
+  "block.muchmoremodcompat.kousa_seat": "Kousa Seat",
+  "block.muchmoremodcompat.glowshroom_beam": "Glowshroom Beam",
+  "block.muchmoremodcompat.glowshroom_support": "Glowshroom Support",
+  "block.muchmoremodcompat.glowshroom_palisade": "Glowshroom Palisade",
+  "block.muchmoremodcompat.glowshroom_seat": "Glowshroom Seat" 
 }

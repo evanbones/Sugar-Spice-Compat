@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "x  "
+  ],
+  "key": {
+    "x": {
+      "item": "enhanced_mushrooms:glowshroom_planks"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:glowshroom_support",
+    "count": 3
+  }
+}

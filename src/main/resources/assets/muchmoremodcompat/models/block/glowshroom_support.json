@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/support",
+  "textures": {
+    "particle": "muchmoremodcompat:block/glowshroom_support",
+    "texture": "muchmoremodcompat:block/glowshroom_support"
+  }
+}

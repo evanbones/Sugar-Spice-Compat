@@ -6,6 +6,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
+
 import org.apache.commons.lang3.tuple.Pair;
 
 public class CompatWoodTypes
@@ -14,7 +15,7 @@ public class CompatWoodTypes
 
     static {
         addModWoodTypes("atmospheric", (IWoodType[])AtmosphericWoodTypes.values());
-        addModWoodTypes("enhanced_mushrooms", (IWoodType[])EnhancedMushroomsWoodTypes.values());
+
         addModWoodTypes("environmental", (IWoodType[])EnvironmentalWoodTypes.values());
     }
 

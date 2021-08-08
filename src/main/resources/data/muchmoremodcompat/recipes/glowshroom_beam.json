@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x ",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "enhanced_mushrooms:stripped_glowshroom_stem"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:glowshroom_beam",
+    "count": 2
+  }
+}

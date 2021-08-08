@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx "
+  ],
+  "key": {
+    "x": {
+      "item": "enhanced_mushrooms:glowshroom_stem"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:glowshroom_palisade",
+    "count": 6
+  }
+}
