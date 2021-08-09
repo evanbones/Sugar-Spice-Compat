@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "y  "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:aspen_slab"
+    },
+    "y": {
+      "item": "atmospheric:aspen_fence"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:aspen_seat",
+    "count": 2
+  }
+}

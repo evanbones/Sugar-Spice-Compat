@@ -8,6 +8,8 @@
   "block.muchmoremodcompat.wisteria_support": "Wisteria Support",
   "block.muchmoremodcompat.wisteria_palisade": "Wisteria Palisade",
   "block.muchmoremodcompat.wisteria_seat": "Wisteria Seat",
+  "block.muchmoremodcompat.bamboo_seat": "Bamboo Seat",
+  "block.muchmoremodcompat.bamboo_support": "Bamboo Support",
   "block.muchmoremodcompat.kousa_beam": "Kousa Beam",
   "block.muchmoremodcompat.kousa_support": "Kousa Support",
   "block.muchmoremodcompat.kousa_palisade": "Kousa Palisade",
@@ -23,5 +25,7 @@
   "block.muchmoremodcompat.glowshroom_beam": "Glowshroom Beam",
   "block.muchmoremodcompat.glowshroom_support": "Glowshroom Support",
   "block.muchmoremodcompat.glowshroom_palisade": "Glowshroom Palisade",
-  "block.muchmoremodcompat.glowshroom_seat": "Glowshroom Seat" 
+  "block.muchmoremodcompat.glowshroom_seat": "Glowshroom Seat",
+  "block.autumnity.glow_jack_o_lantern": "Glowlight Jack o'Lantern",
+  "block.autumnity.large_glow_jack_o_lantern_slice": "Large Glowlight Jack o'Lantern Slice"
 }

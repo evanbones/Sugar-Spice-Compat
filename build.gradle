@@ -58,15 +58,15 @@ minecraft {
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 	
-	implementation fg.deobf("curse.maven:decorative_blocks_abnormals-421760:3311520")
-	implementation fg.deobf("curse.maven:decorative_blocks-362528:3166283")
+	compileOnly fg.deobf("curse.maven:decorative_blocks-362528:3166283")
 	compileOnly fg.deobf("curse.maven:abnormals_core-382216:3351059")
+	compileOnly fg.deobf("curse.maven:decorative_blocks_abnormals-421760:3311520")
 	compileOnly fg.deobf("curse.maven:atmospheric-362393:3249309")
     compileOnly fg.deobf("curse.maven:autumnity-365045:3295700")
     compileOnly fg.deobf("curse.maven:enhanced_mushrooms-383725:3353212")
 	compileOnly fg.deobf("curse.maven:infernalexp-395078:3414229")
+	compileOnly fg.deobf("curse.maven:bambooblocks-348215:3416596")
 	compileOnly fg.deobf("curse.maven:environmental-388992:3221635")
-	runtimeOnly fg.deobf("curse.maven:jei-238222:3411420")
 }
 
 repositories {

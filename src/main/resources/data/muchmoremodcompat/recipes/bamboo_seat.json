@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "y  "
+  ],
+  "key": {
+    "x": {
+      "item": "bamboo_blocks:bamboo_slab"
+    },
+    "y": {
+      "item": "bamboo_blocks:bamboo_fence"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:bamboo_seat",
+    "count": 2
+  }
+}

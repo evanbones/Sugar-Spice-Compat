@@ -1,0 +1,7 @@
+{
+  "parent": "decorative_blocks:custom/seat_inventory",
+  "textures": {
+    "particle": "muchmoremodcompat:block/aspen_seat",
+    "texture": "muchmoremodcompat:block/aspen_seat"
+  }
+}

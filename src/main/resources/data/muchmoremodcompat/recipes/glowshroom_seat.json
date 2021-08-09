@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "y  "
+  ],
+  "key": {
+    "x": {
+      "item": "enhanced_mushrooms:glowshroom_slab"
+    },
+    "y": {
+      "item": "enhanced_mushrooms:glowshroom_fence"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:glowshroom_seat",
+    "count": 2
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "y  "
+  ],
+  "key": {
+    "x": {
+      "item": "environmental:wisteria_slab"
+    },
+    "y": {
+      "item": "environmental:wisteria_fence"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:wisteria_seat",
+    "count": 2
+  }
+}

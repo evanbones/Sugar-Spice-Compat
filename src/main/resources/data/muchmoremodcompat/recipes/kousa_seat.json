@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "x  ",
+    "y  "
+  ],
+  "key": {
+    "x": {
+      "item": "atmospheric:grimwood_slab"
+    },
+    "y": {
+      "item": "atmospheric:grimwood_fence"
+    }
+  },
+  "result": {
+    "item": "muchmoremodcompat:grimwood_seat",
+    "count": 2
+  }
+}

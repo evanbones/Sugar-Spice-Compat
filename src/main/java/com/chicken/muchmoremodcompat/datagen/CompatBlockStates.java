@@ -72,6 +72,36 @@ public class CompatBlockStates extends BlockStateProvider {
         return withSideEndTextures(builder, wood + "_beam");
     }
 
+
+    public void seatBlock(IWoodType wood) {
+        seatInventory(wood);
+        MultiPartBlockStateBuilder builder = getMultipartBuilder(Registration.getSeatBlock(wood));
+        ModelFile seatTopModel = seatTopModel(wood);
+        ModelFile seatPostModel = seatPostModel(wood);
+
+        builder.part().modelFile(seatPostModel).addModel().condition(BlockStateProperties.ATTACHED, Boolean.TRUE).end()
+                .part().modelFile(seatTopModel).addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.NORTH).end()
+                .part().modelFile(seatTopModel).rotationY(180).addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.SOUTH).end()
+                .part().modelFile(seatTopModel).rotationY(90).addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.EAST).end()
+                .part().modelFile(seatTopModel).rotationY(270).addModel().condition(BlockStateProperties.HORIZONTAL_FACING, Direction.WEST).end();
+    }
+
+    public ModelFile seatTopModel(IWoodType wood) {
+        ModelBuilder<?> builder = createModel(wood, WoodDecorativeBlockTypes.SEAT, "top");
+        return withParticleTexture(builder, wood + "_seat");
+    }
+
+    public ModelFile seatPostModel(IWoodType wood) {
+        ModelBuilder<?> builder = createModel(wood, WoodDecorativeBlockTypes.SEAT, "post");
+        return withParticleTexture(builder, wood + "_seat");
+    }
+
+    public ModelFile seatInventory(IWoodType wood) {
+        ModelBuilder<?> builder = createModel(wood, WoodDecorativeBlockTypes.SEAT, "inventory");
+        return withParticleTexture(builder, wood + "_seat");
+    }
+
+
     public void supportBlock(IWoodType wood) {
         ModelFile supportUpModel = supportBlockModel(wood);
         ModelFile supportDownModel = supportBlockDownModel(wood);

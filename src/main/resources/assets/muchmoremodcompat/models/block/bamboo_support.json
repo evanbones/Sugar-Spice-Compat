@@ -1,0 +1,7 @@
+{
+  "parent": "muchmoremodcompat:custom/support",
+  "textures": {
+    "particle": "muchmoremodcompat:block/bamboo_support",
+    "texture": "muchmoremodcompat:block/bamboo_support"
+  }
+}

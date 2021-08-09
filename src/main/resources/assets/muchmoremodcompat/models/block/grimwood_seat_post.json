@@ -1,0 +1,7 @@
+{
+  "parent": "decorative_blocks:custom/seat_post",
+  "textures": {
+    "particle": "muchmoremodcompat:block/grimwood_seat",
+    "texture": "muchmoremodcompat:block/grimwood_seat"
+  }
+}

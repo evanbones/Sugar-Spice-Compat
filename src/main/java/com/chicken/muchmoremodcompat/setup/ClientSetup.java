@@ -18,6 +18,7 @@ public class ClientSetup {
         RenderTypeLookup.setRenderLayer(Registration.GLOW_CHANDELIER.get(), RenderType.getCutoutMipped());
 
         RenderTypeLookup.setRenderLayer(Registration.GLOWSHROOM_BEAM.get(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(Registration.GLOWSHROOM_SEAT.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(Registration.GLOWSHROOM_SUPPORT.get(), RenderType.getTranslucent());
         RenderTypeLookup.setRenderLayer(Registration.GLOWSHROOM_PALISADE.get(), RenderType.getTranslucent());
     }

@@ -1,6 +1,7 @@
 package com.chicken.muchmoremodcompat.setup;
 
 import com.chicken.muchmoremodcompat.blocks.*;
+import com.chicken.muchmoremodcompat.datagen.types.BambooBlocksWoodTypes;
 import com.google.common.collect.ImmutableMap;
 import com.lilypuree.decorative_blocks.blocks.*;
 import com.lilypuree.decorative_blocks.blocks.ChainBlock;
@@ -18,7 +19,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
-import net.minecraftforge.fml.ModList;
 import net.minecraft.item.Item;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraftforge.common.ToolType;
@@ -50,16 +50,23 @@ public class Registration {
     public static final RegistryObject<PalisadeBlock> GLOWSHROOM_PALISADE = BLOCKS.register("glowshroom_palisade", () -> new AlphaPalisadeBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 4.0F).notSolid().sound(SoundType.WOOD).setLightLevel(state -> 14)));
     public static final RegistryObject<BeamBlock> GLOWSHROOM_BEAM = BLOCKS.register("glowshroom_beam", () -> new AlphaBeamBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 14)));
     public static final RegistryObject<SupportBlock> GLOWSHROOM_SUPPORT = BLOCKS.register("glowshroom_support", () -> new AlphaSupportBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 14)));
+    public static final RegistryObject<SeatBlock> GLOWSHROOM_SEAT = BLOCKS.register("glowshroom_seat", () -> new AlphaSeatBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid().setLightLevel(state -> 14)));
+
+    public static final AbstractBlock.Properties bambooBlockProperties = Block.Properties.create(Material.WOOD).hardnessAndResistance(1.2F).sound(SoundType.WOOD).notSolid();
+
+    public static final RegistryObject<SupportBlock> BAMBOO_SUPPORT = BLOCKS.register("bamboo_support", () -> new SupportBlock(bambooBlockProperties, (IWoodType) BambooBlocksWoodTypes.BAMBOO));
+    public static final RegistryObject<SeatBlock> BAMBOO_SEAT = BLOCKS.register("bamboo_seat", () -> new SeatBlock(bambooBlockProperties, (IWoodType) BambooBlocksWoodTypes.BAMBOO));
 
     public static final BlockSubRegistryHelper HELPER = Autumnity.REGISTRY_HELPER.getBlockSubHelper();
     public static final RegistryObject<Block> GLOW_JACK_O_LANTERN = HELPER.createCompatBlock("infernalexp", "glow_jack_o_lantern", () -> new AutumnityJackOLanternBlock(Block.Properties.from(Blocks.PUMPKIN).setLightLevel(AutumnityProperties.getMaxLightValue())), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> LARGE_GLOW_JACK_O_LANTERN_SLICE = HELPER.createCompatBlock("infernalexp", "large_glow_jack_o_lantern_slice", () -> new CarvedLargePumpkinSliceBlock(Block.Properties.from(Blocks.PUMPKIN).setLightLevel(AutumnityProperties.getMaxLightValue())), ItemGroup.BUILDING_BLOCKS);
 
-
-
     public static final Item.Properties modItemProperties = new Item.Properties().group(ModSetup.ITEM_GROUP);
     public static final Item.Properties dummyProperty = new Item.Properties();
 
+    public static final RegistryObject<Item> BAMBOO_SEAT_ITEM = ITEMS.register("bamboo_seat", () -> new BlockItem(BAMBOO_SEAT.get(), modItemProperties));
+    public static final RegistryObject<Item> BAMBOO_SUPPORT_ITEM = ITEMS.register("bamboo_support", () -> new BlockItem(BAMBOO_SUPPORT.get(), modItemProperties));
+    public static final RegistryObject<Item> GLOWSHROOM_SEAT_ITEM = ITEMS.register("glowshroom_seat", () -> new BlockItem(GLOWSHROOM_SEAT.get(), modItemProperties));
     public static final RegistryObject<Item> GLOWSHROOM_SUPPORT_ITEM = ITEMS.register("glowshroom_support", () -> new BlockItem(GLOWSHROOM_SUPPORT.get(), modItemProperties));
     public static final RegistryObject<Item> GLOWSHROOM_BEAM_ITEM = ITEMS.register("glowshroom_beam", () -> new BlockItem(GLOWSHROOM_BEAM.get(), modItemProperties));
     public static final RegistryObject<Item> GLOWSHROOM_PALISADE_ITEM = ITEMS.register("glowshroom_palisade", () -> new BlockItem(GLOWSHROOM_PALISADE.get(), modItemProperties));
@@ -115,6 +122,10 @@ public class Registration {
         return (PalisadeBlock) getWoodDecorativeBlock(wood, WoodDecorativeBlockTypes.PALISADE);
     }
 
+    public static SeatBlock getSeatBlock(IWoodType wood) {
+        return (SeatBlock) getWoodDecorativeBlock(wood, WoodDecorativeBlockTypes.SEAT);
+    }
+
     public static SupportBlock getSupportBlock(IWoodType wood) {
         return (SupportBlock) getWoodDecorativeBlock(wood, WoodDecorativeBlockTypes.SUPPORT);
     }
@@ -131,6 +142,8 @@ public class Registration {
                 return new SupportBlock(woodProperty, wood);
             case PALISADE:
                 return new PalisadeBlock(palisadeProperty, wood);
+            case SEAT:
+                return new SeatBlock(woodProperty, wood);
         }
     }
 }

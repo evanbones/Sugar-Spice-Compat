@@ -1,7 +1,6 @@
 package com.chicken.muchmoremodcompat.blocks;
 
 import com.lilypuree.decorative_blocks.blocks.PalisadeBlock;
-import com.teamaurora.enhanced_mushrooms.common.block.IGlowshroomWood;
 import net.minecraft.block.BlockState;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
