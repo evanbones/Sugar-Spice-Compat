@@ -58,7 +58,7 @@ minecraft {
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 	
-	compileOnly fg.deobf("curse.maven:decorative_blocks-362528:3166283")
+	implementation fg.deobf("curse.maven:decorative_blocks-362528:3166283")
 	compileOnly fg.deobf("curse.maven:abnormals_core-382216:3351059")
 	compileOnly fg.deobf("curse.maven:decorative_blocks_abnormals-421760:3311520")
 	compileOnly fg.deobf("curse.maven:atmospheric-362393:3249309")
