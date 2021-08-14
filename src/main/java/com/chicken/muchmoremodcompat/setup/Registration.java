@@ -9,16 +9,10 @@ import com.lilypuree.decorative_blocks.datagen.types.IWoodType;
 import com.lilypuree.decorative_blocks.datagen.types.WoodDecorativeBlockTypes;
 import com.lilypuree.decorative_blocks.items.BurnableBlockItem;
 import com.chicken.muchmoremodcompat.datagen.types.CompatWoodTypes;
-import com.minecraftabnormals.abnormals_core.core.util.registry.BlockSubRegistryHelper;
-import com.minecraftabnormals.autumnity.common.block.AutumnityJackOLanternBlock;
-import com.minecraftabnormals.autumnity.common.block.CarvedLargePumpkinSliceBlock;
-import com.minecraftabnormals.autumnity.core.Autumnity;
-import com.minecraftabnormals.autumnity.core.other.AutumnityProperties;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraftforge.common.ToolType;
@@ -56,10 +50,6 @@ public class Registration {
 
     public static final RegistryObject<SupportBlock> BAMBOO_SUPPORT = BLOCKS.register("bamboo_support", () -> new SupportBlock(bambooBlockProperties, (IWoodType) BambooBlocksWoodTypes.BAMBOO));
     public static final RegistryObject<SeatBlock> BAMBOO_SEAT = BLOCKS.register("bamboo_seat", () -> new SeatBlock(bambooBlockProperties, (IWoodType) BambooBlocksWoodTypes.BAMBOO));
-
-    public static final BlockSubRegistryHelper HELPER = Autumnity.REGISTRY_HELPER.getBlockSubHelper();
-    public static final RegistryObject<Block> GLOW_JACK_O_LANTERN = HELPER.createCompatBlock("infernalexp", "glow_jack_o_lantern", () -> new AutumnityJackOLanternBlock(Block.Properties.from(Blocks.PUMPKIN).setLightLevel(AutumnityProperties.getMaxLightValue())), ItemGroup.BUILDING_BLOCKS);
-    public static final RegistryObject<Block> LARGE_GLOW_JACK_O_LANTERN_SLICE = HELPER.createCompatBlock("infernalexp", "large_glow_jack_o_lantern_slice", () -> new CarvedLargePumpkinSliceBlock(Block.Properties.from(Blocks.PUMPKIN).setLightLevel(AutumnityProperties.getMaxLightValue())), ItemGroup.BUILDING_BLOCKS);
 
     public static final Item.Properties modItemProperties = new Item.Properties().group(ModSetup.ITEM_GROUP);
     public static final Item.Properties dummyProperty = new Item.Properties();
